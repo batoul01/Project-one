@@ -1,0 +1,301 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: "Playfair Display", serif;
+}
+.navpar
+{
+  width: 100%;
+  height: 65px;
+  background-color: rgba(0,0,0,0.642);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  overflow: auto;
+}
+.navpar img
+{
+  width: 150px;
+  height: 62px;
+  float: left;
+  margin-left: 60px;
+  
+}
+.navpar ul
+{
+  list-style: none;
+  float: right;
+  margin-right: 0px;
+  margin-top: 20px;
+}
+.navpar ul li
+{
+  display: inline;
+/*  margin-left: 15px;*/
+}
+.navpar ul li a
+{
+  text-decoration: none;
+  color: white;
+}
+.navpar ul  li i
+{
+  color: white;
+  font-size: 28px;
+  margin-right: 15px
+}
+.navpar ul li i:hover{ color:#FFB703;}
+
+.navpar ul li a:hover
+{
+  color:#FFB703;
+}
+/*hero img*/
+.heroimg
+{
+width: 100%;
+height: 100vh;
+background-image: url(hero.jpeg);
+background-size: cover;
+background-repeat: no-repeat;
+position: relative;
+margin-bottom: 25px;
+}
+.text
+{
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 40px;
+}
+.text button
+{
+  width: 90px;
+  height: 50px;
+  border:1px solid gold;
+  color: white;
+  background-color: rgba(0,0,0,0.642);
+  border-radius: 30px;
+}
+.text button:hover
+{
+  background-color: white;
+  color: black;
+  
+}
+
+.underline_menu
+{
+  width: 60px;
+  background-color:#FFB703;
+  height: 2px;
+  border-radius:3px;
+  margin: auto;
+  margin-bottom:10px;
+}
+.container
+{
+  width: 80%;
+  margin: auto;
+/*  background-color: gray;*/
+}
+ 
+.menu_box
+{
+  float: left;
+  border: 1px solid black;
+  width: 30%;
+  text-align: center;
+  padding: 6px;
+  font-size: 15px;
+ margin-top: 10px;
+margin-bottom: 55px;
+position: relative;
+height: 700px;
+
+
+} 
+.menu_box img{
+  height: 120px;
+  margin-top: 14px;
+}
+.menu_box_icon i {
+  font-size: 28px;
+  color: #023047;
+}
+.menu_box_icon{
+  position: absolute;
+  width: fit-content;
+  opacity: 0;
+  margin: auto;
+  bottom: 0;
+  right: 40%;
+}
+.menu_box::after{
+  position: absolute;
+  top:0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 0%;
+  background-color: rgb(255, 183, 3,0.250);
+  translate: 0.7s;
+}
+.menu_box:hover::after{
+  height: 100%;
+}
+.menu_box:hover .menu_box_icon{
+  opacity: 1;
+
+} 
+
+.menu_box .menu_box_title
+{
+ background-color: red;
+  color: white;
+  text-align: center;
+}
+.menu_box_img
+{
+  width:70%;
+  margin: auto;
+}
+.menu_box_img img
+{
+  width: 100%;
+  border-radius: 50%;
+  outline: 1px solid gold;
+  outline-offset: 1px;
+}
+/*chef*/
+.chef_box{
+ text-align: center;
+ float:left;
+  width:22%;
+  margin-top: 10px;
+/*  margin-bottom: 55px;*/
+  position: relative;
+  border-radius: 2px;
+}
+.chef_box h5{
+  text-align: center;
+    margin: 12px 0px;
+    font-size: 23px;
+    color: #313028;
+}
+.chef_box::after{
+  position: absolute;
+  top:0;
+  left:0;
+  content: "";
+  width: 0%;
+  height: 0%;
+  translate: 0.7s;
+  background-color: rgba(255, 183, 3,0.250);
+}
+.chef_box:hover {
+  border: 1px solid black;
+}
+.chef_box:hover::after{
+  height: 100%;
+  width: 100%;
+}
+.chef_box_img
+{
+  /*background-color: red;*/
+  margin: auto;
+  
+
+}
+.chef_box_icon{
+  margin: 20px auto;
+  width: 100%;
+/*  text-align: center;*/
+opacity: 0;
+}
+.chef_box:hover .chef_box_icon{opacity: 1;}
+.chef_box_icon i {
+  font-size: 24px;
+  margin-left: 5px;
+  color: #023047 ;
+  font-weight: bold;
+  cursor: pointer;
+}
+.chefinfo{
+  margin: 10px auto;
+  text-align: center;
+  opacity: 0;
+}
+.chef_box:hover .chefinfo{
+  opacity: 1;
+}
+/* about us*/
+.about_box_info{
+  width:40%;
+  float: left;
+/*  background-color: red;*/
+ /* margin-bottom:10px;*/
+  
+}
+.about_box_img{
+  width:30%;
+  float:right;
+/*  background-color: blue;*/
+  margin-bottom:10px;
+} 
+.about_box_img img{
+  width:100%;
+ 
+}
+.contact_info{
+  float: left;
+  width:40%;
+  margin-left: 10%;
+  
+  line-height: 30px;
+}
+.contact_info p a {
+  text-decoration: none;
+}
+.contact_info p a i{
+ color:#FFB703;
+}
+.contact_tabel{
+  float: left;
+  width: 40%;
+  background-color: #FFB703;
+  text-align: center;
+  border-radius: 12px;
+  color: white;
+}
+.contact_tabel input{
+  margin-bottom: 8px;
+}
+button{
+  color: black;
+  border: none;
+  padding: 3px;
+  border-radius: 3px;
+  background-color: white;
+}
+h2{
+  font-size: 35px;
+}
+.footer{
+  background-color: rgba(0,0,0,0.642);
+  width: 100%;
+  height: 50px;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-top: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
